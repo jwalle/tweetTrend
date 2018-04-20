@@ -14,11 +14,13 @@ export default class Tweet extends React.Component<TweetProps, {}> {
 
   render() {
     const htag = tweet.entities.hashtags[0].text;
+    
     const text = reactReplace(tweet.text, htag, (match: string, i: number) => (
-      <span key={i} style={{ color: "red" }}>
+      <span key={i} style={{ color: 'red' }}>
         {match}
       </span>
     ));
+
     return (
       <div className="tweet">
         <div className="user">
