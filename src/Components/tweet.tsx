@@ -1,14 +1,14 @@
-import * as React from "react";
-import * as reactReplace from "react-string-replace";
-const tweet = require("../data.json");
-const imgUrl = "https://img.youtube.com/vi/1JtBxL7MKKo/mqdefault.jpg";
+import * as React from 'react';
+import * as reactReplace from 'react-string-replace';
+const tweet = require('../data.json');
+const imgUrl = 'https://img.youtube.com/vi/1JtBxL7MKKo/mqdefault.jpg';
 
 interface TweetProps {
   name: string;
 }
 
 export default class Tweet extends React.Component<TweetProps, {}> {
-  constructor(props: any) {
+  constructor(props: TweetProps) {
     super(props);
   }
 

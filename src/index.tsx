@@ -1,7 +1,7 @@
-import * as React from "react";
-import { render } from "react-dom";
-import TweetsCol from "./Components/tweetsCol";
-require("./styles/mainStyle.css");
+import * as React from 'react';
+import { render } from 'react-dom';
+import TweetsCol from './Components/tweetsCol';
+require('./styles/mainStyle.css');
 
 const App = () => (
   <div id="mainContainer">
@@ -9,4 +9,4 @@ const App = () => (
   </div>
 );
 
-render(<App />, document.getElementById("root"));
+render(<App />, document.getElementById('root'));
